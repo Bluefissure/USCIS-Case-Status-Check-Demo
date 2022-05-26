@@ -12,22 +12,8 @@ jobs:
     steps:
       - name: Check out this repo
         uses: actions/checkout@v2
-      # - name: Set up Python
-      #   uses: actions/setup-python@v2
-      #   with:
-      #     python-version: '3.9'
-      # - name: Installed package list
-      #   run: apt list --installed
-      # - name: Remove Chrome
-      #   run: sudo apt purge google-chrome-stable
-      # - name: Install all necessary packages
-      #   run: pip install requests beautifulsoup4 pandas webdriver-manager selenium
-      # - name: Run the script
-      #   continue-on-error: true
-      #   id: script
-      #   run: python main.py --receipt-number=${{ secrets.RECEIPT_NUMBER }}
       - name: USCIS Action
-        uses: Bluefissure/uscis-case-status-action@v0.1.2
+        uses: Bluefissure/uscis-case-status-action@v0.1.3
         id: script
         continue-on-error: true
         with:
