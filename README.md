@@ -1,4 +1,4 @@
-# USCIS-Case-Demo
+# USCIS-Case-Status-Check-Demo
 
 ## How to Use
 
